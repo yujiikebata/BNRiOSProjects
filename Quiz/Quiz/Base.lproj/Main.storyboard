@@ -45,6 +45,7 @@
                             <constraint firstItem="joy-VT-DRw" firstAttribute="top" secondItem="rwP-cN-NMY" secondAttribute="bottom" constant="202" id="b03-2P-mv1"/>
                             <constraint firstItem="rwP-cN-NMY" firstAttribute="top" secondItem="CRc-8a-JbT" secondAttribute="bottom" constant="8" id="i4U-Br-p04"/>
                             <constraint firstItem="CRc-8a-JbT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jmr-uS-xEZ"/>
+                            <constraint firstItem="CRc-8a-JbT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lIg-uu-Bti"/>
                             <constraint firstItem="CRc-8a-JbT" firstAttribute="centerX" secondItem="rwP-cN-NMY" secondAttribute="centerX" id="paS-Rh-1Cn"/>
                             <constraint firstItem="eEs-wt-isA" firstAttribute="top" secondItem="joy-VT-DRw" secondAttribute="bottom" constant="2" id="zZ3-ei-2bb"/>
                         </constraints>
