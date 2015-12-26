@@ -283,6 +283,7 @@
 				E755250E1C26B1D0008004ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
