@@ -6,8 +6,6 @@ import UIKit
 var str = "Hello, playground"
 str = "Hello, Swift"
 let constStr = str
-let countingUp = ["one", "two"]
-let secondElement = countingUp[1]
 let nameByParkingSpace = [13: "Alice", 27: "Bob"]
 
 // Types
@@ -32,3 +30,12 @@ let flaotFromLiteral = Float(3.14)
 let easyPi = 3.14
 let floatFromDouble = Float(easyPi)
 let floatingPi: Float = 3.14
+
+// Properties
+var countingUp = ["one", "two"]
+let secondElement = countingUp[1]
+countingUp.count
+emptyString.isEmpty
+
+// Instance methods
+countingUp.append("three")
