@@ -57,3 +57,8 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/screenshots
+
+# playground
+contents.xcplayground
+playground.xcworkspace/
+timeline.xctimeline
