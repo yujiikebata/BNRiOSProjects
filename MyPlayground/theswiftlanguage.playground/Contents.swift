@@ -6,7 +6,6 @@ import UIKit
 var str = "Hello, playground"
 str = "Hello, Swift"
 let constStr = str
-let nameByParkingSpace = [13: "Alice", 27: "Bob"]
 
 // Types
 var nextYear: Int
@@ -58,4 +57,11 @@ if let r1 = reading1,
         let avgReading = (r1 + r2 + r3) / 3
 } else {
     let errorString = "Instrument reported a reading that was nil."
+}
+
+// Subscripting dictionaries
+let nameByParkingSpace = [13: "ba", 27: "Bob"]
+let space42Assignee: String? = nameByParkingSpace[42]
+if let space13Assignee = nameByParkingSpace[13] {
+    print("Key 13 is assigned in the dictionary!")
 }
