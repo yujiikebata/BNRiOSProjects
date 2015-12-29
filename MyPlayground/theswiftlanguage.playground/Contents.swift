@@ -87,3 +87,40 @@ for (i, string) in countingUp.enumerate() {
 for (space, name) in nameByParkingSpace {
     let permit = "Space \(space): \(name)"
 }
+
+// Enumerations
+enum PieType: Int {
+    case Apple = 0
+    case Cherry
+    case Pecan
+}
+
+let favoritePie = PieType.Apple
+
+// Switch Statement
+let name: String
+switch favoritePie {
+case .Apple:
+    name = "Apple"
+case .Cherry:
+    name = "Cherry"
+case .Pecan:
+    name = "Pecan"
+}
+
+let osxVersion: Int = 0
+switch osxVersion {
+case 0...8:
+    print("A big cat")
+case 9:
+    print("Marvericks")
+case 10:
+    print("Yosemite")
+default:
+    print("Greetings, people of the future! What's new in 10. \(osxVersion)?")
+}
+
+let pieRawValue = PieType.Pecan.rawValue
+if let pieType = PieType(rawValue: pieRawValue) {
+    
+}
