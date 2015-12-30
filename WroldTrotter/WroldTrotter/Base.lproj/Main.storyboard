@@ -17,48 +17,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXa-n2-Iqy">
-                                <rect key="frame" x="241" y="222" width="116.5" height="84"/>
+                                <rect key="frame" x="241" y="168" width="116.5" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rds-uq-s1r">
-                                <rect key="frame" x="147" y="120" width="305.5" height="43"/>
+                                <rect key="frame" x="147" y="66" width="305.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnf-w5-TQM">
-                                <rect key="frame" x="172" y="314" width="254" height="43"/>
+                                <rect key="frame" x="172" y="260" width="254" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKC-wA-VjF">
-                                <rect key="frame" x="240" y="171" width="118.5" height="43"/>
+                                <rect key="frame" x="240" y="117" width="118.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8M-Wj-Xw6">
-                                <rect key="frame" x="244" y="28" width="111" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXb-vZ-SEJ">
+                                <rect key="frame" x="174.5" y="28" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="IgW-rv-A0T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="rds-uq-s1r" firstAttribute="top" secondItem="g8M-Wj-Xw6" secondAttribute="bottom" constant="8" id="3Gb-8a-s0Q"/>
                             <constraint firstItem="bKC-wA-VjF" firstAttribute="top" secondItem="rds-uq-s1r" secondAttribute="bottom" constant="8" id="9j2-hr-Mcf"/>
-                            <constraint firstItem="g8M-Wj-Xw6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IYH-7O-4zf"/>
                             <constraint firstItem="LXa-n2-Iqy" firstAttribute="top" secondItem="bKC-wA-VjF" secondAttribute="bottom" constant="8" id="OF3-Qx-tpb"/>
-                            <constraint firstItem="g8M-Wj-Xw6" firstAttribute="centerX" secondItem="rds-uq-s1r" secondAttribute="centerX" id="OV0-kf-tla"/>
+                            <constraint firstItem="VXb-vZ-SEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OPe-KL-4or"/>
                             <constraint firstItem="bnf-w5-TQM" firstAttribute="centerX" secondItem="rds-uq-s1r" secondAttribute="centerX" id="Rjv-xa-1uD"/>
+                            <constraint firstItem="VXb-vZ-SEJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VtG-c2-Rbj"/>
                             <constraint firstItem="LXa-n2-Iqy" firstAttribute="centerX" secondItem="rds-uq-s1r" secondAttribute="centerX" id="YGw-a5-l4I"/>
                             <constraint firstItem="bnf-w5-TQM" firstAttribute="top" secondItem="LXa-n2-Iqy" secondAttribute="bottom" constant="8" id="aOA-OC-dCK"/>
-                            <constraint firstItem="g8M-Wj-Xw6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bTk-7Y-NKE"/>
+                            <constraint firstItem="VXb-vZ-SEJ" firstAttribute="centerX" secondItem="rds-uq-s1r" secondAttribute="centerX" id="fLl-ho-S9H"/>
+                            <constraint firstItem="VXb-vZ-SEJ" firstAttribute="centerX" secondItem="rds-uq-s1r" secondAttribute="centerX" id="gSj-lF-Cyo"/>
                             <constraint firstItem="bKC-wA-VjF" firstAttribute="centerX" secondItem="rds-uq-s1r" secondAttribute="centerX" id="mX4-xc-JfQ"/>
+                            <constraint firstItem="rds-uq-s1r" firstAttribute="top" secondItem="VXb-vZ-SEJ" secondAttribute="bottom" constant="8" id="sFD-hh-n3H"/>
                         </constraints>
                     </view>
                 </viewController>
