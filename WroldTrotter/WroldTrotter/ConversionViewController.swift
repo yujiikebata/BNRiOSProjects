@@ -13,7 +13,7 @@ class CoversionViewController: UIViewController {
     @IBOutlet var celsiusLabel: UILabel!
     
     @IBAction func fahrenheitFieldEditingChanged(textField: UITextField) {
-        if let text = textField.text where text.isEmpty {
+        if let text = textField.text where !text.isEmpty {
             celsiusLabel.text = text
         } else {
             celsiusLabel.text = "???"
