@@ -11,6 +11,7 @@ import UIKit
 
 class CoversionViewController: UIViewController {
     @IBOutlet var celsiusLabel: UILabel!
+    @IBOutlet var textField: UITextField!
     
     @IBAction func fahrenheitFieldEditingChanged(textField: UITextField) {
         if let text = textField.text where !text.isEmpty {
@@ -19,4 +20,10 @@ class CoversionViewController: UIViewController {
             celsiusLabel.text = "???"
         }
     }
+    
+    @IBAction func dismissKeyboard(sender: AnyObject) {
+        textField.resignFirstResponder()
+    }
+    
+    
 }

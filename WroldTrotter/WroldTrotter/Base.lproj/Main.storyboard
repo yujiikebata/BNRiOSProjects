@@ -54,6 +54,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="bKC-wA-VjF" firstAttribute="top" secondItem="rds-uq-s1r" secondAttribute="bottom" constant="8" id="9j2-hr-Mcf"/>
                             <constraint firstItem="LXa-n2-Iqy" firstAttribute="top" secondItem="bKC-wA-VjF" secondAttribute="bottom" constant="8" id="OF3-Qx-tpb"/>
@@ -67,12 +68,21 @@
                             <constraint firstItem="bKC-wA-VjF" firstAttribute="centerX" secondItem="rds-uq-s1r" secondAttribute="centerX" id="mX4-xc-JfQ"/>
                             <constraint firstItem="rds-uq-s1r" firstAttribute="top" secondItem="VXb-vZ-SEJ" secondAttribute="bottom" constant="8" id="sFD-hh-n3H"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Bb9-7e-tBn" appends="YES" id="q4Q-BK-Cn5"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="LXa-n2-Iqy" id="H8L-RM-DgA"/>
+                        <outlet property="textField" destination="VXb-vZ-SEJ" id="OCB-BM-jGA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Bb9-7e-tBn">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="aNb-Hb-42y"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="456" y="472"/>
         </scene>
