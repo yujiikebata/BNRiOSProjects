@@ -55,4 +55,15 @@ class CoversionViewController: UIViewController, UITextFieldDelegate {
     @IBAction func dismissKeyboard(sender: AnyObject) {
         textField.resignFirstResponder()
     }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        let existingTextHasDecimalSeparator = textField.text?.rangeOfString(".")
+        let replacementTextHasDecimalSeparator = string.rangeOfString(".")
+        
+        if existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil {
+            return false
+        } else {
+            return true
+        }
+    }
 }
