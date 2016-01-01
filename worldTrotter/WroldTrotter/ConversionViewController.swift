@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CoversionViewController: UIViewController {
+class CoversionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
     
