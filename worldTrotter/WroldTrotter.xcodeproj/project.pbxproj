@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74BA4061C390AD700B2389D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74BA4051C390AD600B2389D /* MapKit.framework */; };
 		E7CA76EC1C32898E000EE257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA76EB1C32898E000EE257 /* AppDelegate.swift */; };
 		E7CA76F11C32898E000EE257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CA76EF1C32898E000EE257 /* Main.storyboard */; };
 		E7CA76F31C32898E000EE257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7CA76F21C32898E000EE257 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E74BA4051C390AD600B2389D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E7CA76E81C32898E000EE257 /* WroldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WroldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CA76EB1C32898E000EE257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7CA76F01C32898E000EE257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74BA4061C390AD700B2389D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		E7CA76DF1C32898E000EE257 = {
 			isa = PBXGroup;
 			children = (
+				E74BA4051C390AD600B2389D /* MapKit.framework */,
 				E7CA76EA1C32898E000EE257 /* WroldTrotter */,
 				E7CA76E91C32898E000EE257 /* Products */,
 			);
