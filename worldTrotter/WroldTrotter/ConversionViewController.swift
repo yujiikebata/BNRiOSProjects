@@ -21,6 +21,11 @@ class CoversionViewController: UIViewController, UITextFieldDelegate {
         return nf
     }()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("ConversionViewController loaded its view.")
+    }
+    
     var fahrenheitValue: Double? {
         didSet {
             updateCelsiusLabel()
