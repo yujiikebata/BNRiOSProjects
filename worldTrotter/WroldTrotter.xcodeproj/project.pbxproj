@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E736FF801C3A762100E39A4D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E736FF821C3A762100E39A4D /* Localizable.strings */; };
 		E74BA4061C390AD700B2389D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74BA4051C390AD600B2389D /* MapKit.framework */; };
 		E74BA4081C3913EB00B2389D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74BA4071C3913EB00B2389D /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E7CA76EC1C32898E000EE257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CA76EB1C32898E000EE257 /* AppDelegate.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E736FF811C3A762100E39A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E736FF831C3A762E00E39A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E736FF841C3A762F00E39A4D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E74BA4051C390AD600B2389D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E74BA4071C3913EB00B2389D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E7C87E5D1C3A70340054AF4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 		E7CA76DF1C32898E000EE257 = {
 			isa = PBXGroup;
 			children = (
+				E736FF821C3A762100E39A4D /* Localizable.strings */,
 				E74BA4051C390AD600B2389D /* MapKit.framework */,
 				E7CA76EA1C32898E000EE257 /* WroldTrotter */,
 				E7CA76E91C32898E000EE257 /* Products */,
@@ -114,6 +119,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = E7CA76DF1C32898E000EE257;
 			productRefGroup = E7CA76E91C32898E000EE257 /* Products */;
@@ -131,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CA76F61C32898E000EE257 /* LaunchScreen.storyboard in Resources */,
+				E736FF801C3A762100E39A4D /* Localizable.strings in Resources */,
 				E7CA76F31C32898E000EE257 /* Assets.xcassets in Resources */,
 				E7CA76F11C32898E000EE257 /* Main.storyboard in Resources */,
 			);
@@ -152,6 +159,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E736FF821C3A762100E39A4D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E736FF811C3A762100E39A4D /* Base */,
+				E736FF831C3A762E00E39A4D /* en */,
+				E736FF841C3A762F00E39A4D /* es */,
+			);
+			name = Localizable.strings;
+			path = WroldTrotter;
+			sourceTree = "<group>";
+		};
 		E7CA76EF1C32898E000EE257 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
