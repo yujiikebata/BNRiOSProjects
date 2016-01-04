@@ -19,6 +19,8 @@
 /* Begin PBXFileReference section */
 		E74BA4051C390AD600B2389D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E74BA4071C3913EB00B2389D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E7C87E5D1C3A70340054AF4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		E7C87E5E1C3A710E0054AF4D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		E7CA76E81C32898E000EE257 /* WroldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WroldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CA76EB1C32898E000EE257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7CA76F01C32898E000EE257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -154,6 +156,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E7CA76F01C32898E000EE257 /* Base */,
+				E7C87E5D1C3A70340054AF4D /* en */,
+				E7C87E5E1C3A710E0054AF4D /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
