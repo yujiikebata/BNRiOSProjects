@@ -25,6 +25,13 @@ class ViewController: UIViewController {
         questionLabel.text = questions[currentQuestionIndex]
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Set the label's initial alpha
+        questionLabel.alpha = 0
+    }
+    
     @IBAction func showNextQuestion(sender: AnyObject) {
         ++currentQuestionIndex
         if currentQuestionIndex == questions.count {
@@ -35,11 +42,19 @@ class ViewController: UIViewController {
         questionLabel.text = question
         answerLabel.text = "???"
         
+        animateLabelTransition()
     }
     
     @IBAction func showAnswer(sender: AnyObject) {
         let answer: String = answers[currentQuestionIndex]
         answerLabel.text = answer
+    }
+    
+    func animateLabelTransition() {
+        // Animate the alpha
+        UIView.animateWithDuration(5.0, animations: {
+            self.questionLabel.alpha = 1
+        })
     }
 }
 
