@@ -42,7 +42,7 @@
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I4J-pk-Z3K"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-6H-HOq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-6H-HOq">
                                 <rect key="frame" x="279" y="28" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -54,9 +54,9 @@
                             <constraint firstItem="joy-VT-DRw" firstAttribute="centerX" secondItem="rwP-cN-NMY" secondAttribute="centerX" id="085-Wz-5yl"/>
                             <constraint firstItem="CRc-8a-JbT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JWx-3i-N9j"/>
                             <constraint firstItem="eEs-wt-isA" firstAttribute="centerX" secondItem="rwP-cN-NMY" secondAttribute="centerX" id="VZq-iy-sRY"/>
-                            <constraint firstItem="LFC-6H-HOq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XFj-i1-Bmi"/>
                             <constraint firstItem="joy-VT-DRw" firstAttribute="top" secondItem="rwP-cN-NMY" secondAttribute="bottom" constant="202" id="b03-2P-mv1"/>
                             <constraint firstItem="LFC-6H-HOq" firstAttribute="top" secondItem="CRc-8a-JbT" secondAttribute="top" id="hHj-CT-lxK"/>
+                            <constraint firstItem="rwP-cN-NMY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZb-eh-MrH"/>
                             <constraint firstItem="rwP-cN-NMY" firstAttribute="top" secondItem="CRc-8a-JbT" secondAttribute="bottom" constant="8" id="i4U-Br-p04"/>
                             <constraint firstItem="CRc-8a-JbT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jmr-uS-xEZ"/>
                             <constraint firstItem="CRc-8a-JbT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lIg-uu-Bti"/>
@@ -67,7 +67,9 @@
                     <connections>
                         <outlet property="answerLabel" destination="joy-VT-DRw" id="7AK-nb-t6N"/>
                         <outlet property="currentQuestionLabel" destination="CRc-8a-JbT" id="pNl-BK-A2Y"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="jmr-uS-xEZ" id="3lR-zc-IPJ"/>
                         <outlet property="nextQuestionLabel" destination="LFC-6H-HOq" id="AzL-Gv-H73"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="lIg-uu-Bti" id="VU5-e0-TEg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
