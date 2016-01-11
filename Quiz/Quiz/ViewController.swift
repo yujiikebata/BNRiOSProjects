@@ -13,25 +13,33 @@ class ViewController: UIViewController {
     @IBOutlet var currentQuestionLabelCenterXConstraint: NSLayoutConstraint!
     @IBOutlet var nextQuestionLabel: UILabel!
     @IBOutlet var nextQuestionLabelCenterXConstraint: NSLayoutConstraint!
+    
     @IBOutlet var answerLabel: UILabel!
     
     let questions: [String] = ["From what is cognac made?",
-                                "What is 7+7",
-                                "What is the capital of Vermont?"]
+        "What is 7+7",
+        "What is the capital of Vermont?"]
     let answers: [String] = ["Grapes",
-                            "14",
-                            "Montpelier"]
+        "14",
+        "Montpelier"]
     var currentQuestionIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         currentQuestionLabel.text = questions[currentQuestionIndex]
+        
+        updateOffScreenLabel()
+    }
+    
+    func updateOffScreenLabel() {
+        let screenWidth = view.frame.width
+        nextQuestionLabelCenterXConstraint.constant = -screenWidth
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Set the label's initial alpha
+        // Set the label's intital alpha
         nextQuestionLabel.alpha = 0
     }
     
@@ -45,7 +53,7 @@ class ViewController: UIViewController {
         nextQuestionLabel.text = question
         answerLabel.text = "???"
         
-        animateLabelTransition()
+        animateLabelTransitions()
     }
     
     @IBAction func showAnswer(sender: AnyObject) {
@@ -53,23 +61,31 @@ class ViewController: UIViewController {
         answerLabel.text = answer
     }
     
-    func animateLabelTransition() {
+    func animateLabelTransitions() {
+        // Force any outstanding layout change to occur
+        view.layoutIfNeeded()
+        
         // Animate the alpha
-        UIView.animateWithDuration(5.0,
+        // and the center X constraints
+        let screenWidth = view.frame.width
+        self.nextQuestionLabelCenterXConstraint.constant = 0
+        self.currentQuestionLabelCenterXConstraint.constant += screenWidth
+        
+        // Animate the alpha
+        UIView.animateWithDuration(0.5,
             delay: 0,
             options: [],
             animations: {
-            self.currentQuestionLabel.alpha = 0
-            self.nextQuestionLabel.alpha = 1
+                self.currentQuestionLabel.alpha = 0
+                self.nextQuestionLabel.alpha = 1
+                
+                self.view.layoutIfNeeded()
             },
             completion: { _ in
                 swap(&self.currentQuestionLabel, &self.nextQuestionLabel)
+                swap(&self.currentQuestionLabelCenterXConstraint, &self.nextQuestionLabelCenterXConstraint)
+                
+                self.updateOffScreenLabel()
         })
     }
-    
-    func updateOffScreenLabel() {
-        let screenWidth = view.frame.width
-        nextQuestionLabelCenterXConstraint.constant = -screenWidth
-    }
 }
-
