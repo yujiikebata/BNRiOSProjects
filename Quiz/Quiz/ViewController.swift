@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         // Animate the alpha
         UIView.animateWithDuration(0.5,
             delay: 0,
-            options: [],
+            options: [UIViewAnimationOptions.CurveLinear],
             animations: {
                 self.currentQuestionLabel.alpha = 0
                 self.nextQuestionLabel.alpha = 1
