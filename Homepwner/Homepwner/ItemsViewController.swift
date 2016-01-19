@@ -17,7 +17,20 @@ class ItemsViewController: UITableViewController {
     }
     
     @IBAction func toggleEditingMode(sender: AnyObject) {
-        
+        // If you are currently in editing mode...
+        if editing {
+            // Change text of button to infrom user of state
+            sender.setTitle("Edit", forState: .Normal)
+            
+            // Turn off editing mode
+            setEditing(false, animated: true)
+        } else {
+            // Change text of button to infrom user of state
+            sender.setTitle("Edit", forState: .Normal)
+            
+            // Enter editing mode
+            setEditing(true, animated: true)
+        }
     }
     
     override func viewDidLoad() {
