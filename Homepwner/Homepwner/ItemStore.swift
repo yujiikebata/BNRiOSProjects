@@ -25,4 +25,6 @@ class ItemStore {
             allItems.removeAtIndex(index)
         }
     }
+    
+    
 }
