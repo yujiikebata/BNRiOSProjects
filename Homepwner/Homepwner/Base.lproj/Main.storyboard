@@ -78,6 +78,11 @@
                                         <constraint firstItem="vGx-f5-XTv" firstAttribute="centerY" secondItem="cvj-bl-TBq" secondAttribute="centerY" id="qxz-S2-wKW"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="a34-ga-SMC" id="hAr-pc-4EB"/>
+                                    <outlet property="serialNumberLabel" destination="t60-3W-9ET" id="PEj-NJ-zej"/>
+                                    <outlet property="valueLabel" destination="vGx-f5-XTv" id="Sff-CG-fuK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
