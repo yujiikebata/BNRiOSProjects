@@ -65,9 +65,9 @@ class ItemsViewController: UITableViewController {
         // Get a new or recycled cell
         let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath) as! ItemCell
         
-        // Set the text on the cell with the description of the item
-        // that is at the nth index of items, where n = row this cell
-        // will appear in on the tableview
+        // Update the labels for the new preferred text size
+        cell.updateLabels()
+        
         let item = itemStore.allItems[indexPath.row]
         
         // Configure the cell with the Item
