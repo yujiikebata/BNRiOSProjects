@@ -172,6 +172,7 @@
                                     <outlet property="nameLabel" destination="a34-ga-SMC" id="hAr-pc-4EB"/>
                                     <outlet property="serialNumberLabel" destination="t60-3W-9ET" id="PEj-NJ-zej"/>
                                     <outlet property="valueLabel" destination="vGx-f5-XTv" id="Sff-CG-fuK"/>
+                                    <segue destination="5ke-MM-FPd" kind="show" id="h2K-5t-suh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
