@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Cmd-al-IYM">
             <objects>
-                <viewController id="5ke-MM-FPd" sceneMemberID="viewController">
+                <viewController id="5ke-MM-FPd" customClass="DetailViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tcJ-2Z-SeL"/>
                         <viewControllerLayoutGuide type="bottom" id="7gp-mt-pdU"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7qt-ql-yV1">
-                                <rect key="frame" x="20" y="28" width="560" height="564"/>
+                                <rect key="frame" x="20" y="28" width="560" height="520"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8D3-Dl-J5J">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -69,7 +69,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2y-MJ-f1L">
-                                        <rect key="frame" x="0.0" y="114" width="560" height="450"/>
+                                        <rect key="frame" x="0.0" y="114" width="560" height="406"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -186,7 +186,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irW-Nw-fxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="262"/>
+            <point key="canvasLocation" x="638" y="246"/>
         </scene>
     </scenes>
 </document>
