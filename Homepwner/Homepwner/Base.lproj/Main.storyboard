@@ -89,6 +89,12 @@
                             <constraint firstAttribute="leadingMargin" secondItem="7qt-ql-yV1" secondAttribute="leading" id="leB-xN-Db6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="c2y-MJ-f1L" id="M4q-8K-Eus"/>
+                        <outlet property="nameField" destination="sk3-jd-knn" id="pW8-mq-tM6"/>
+                        <outlet property="serialNumberField" destination="2Yg-6U-ITh" id="3v8-rf-onB"/>
+                        <outlet property="valueField" destination="qBq-M5-le5" id="iyf-3w-W4Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzt-Hp-Wpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
