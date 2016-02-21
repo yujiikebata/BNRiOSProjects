@@ -16,6 +16,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
     
+    @IBAction func backgroundTapped(sender: AnyObject) {
+        view.endEditing(true)
+    }
+    
     var item: Item!
     
     let numberFormatter: NSNumberFormatter = {
