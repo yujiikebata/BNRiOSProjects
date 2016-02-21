@@ -33,6 +33,9 @@
                                                 <rect key="frame" x="53" y="0.0" width="507" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="5ke-MM-FPd" id="nel-4E-WPv"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
